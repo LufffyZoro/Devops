@@ -5,7 +5,7 @@ After=syslog.target
 [Service]
 User=root
 WorkingDirectory=/home/ubuntu/pcsApplication/itext_server
-ExecStart=/usr/bin/java -jar pcsItext-0.0.1-SNAPSHOT.jar
+ExecStart=/usr/bin/java -jar -Dspring.local.path=/home/ubuntu/itext_server/pcsItext-0.0.1-SNAPSHOT.jar
 SuccessExitStatus=143
 
 
